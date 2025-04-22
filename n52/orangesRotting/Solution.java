@@ -1,4 +1,4 @@
-package solution_52;
+package n52.orangesRotting;
 
 import java.util.ArrayList;
 
