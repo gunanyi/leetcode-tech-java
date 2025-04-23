@@ -1,10 +1,14 @@
-package n53.canFinish;
+### 题目描述
+https://leetcode.cn/problems/course-schedule/description/?envType=study-plan-v2&envId=top-100-liked
 
-import java.sql.Struct;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+### 解题思路
+使用3色状态来判断是否有环
+当我们访问node时，设置状态为1
+然后遍历node的边
+当我们访问遇到1时，说明有环
+访问完成时，设置node为2
 
+```java
 public class Solution {
 
     public static void main(String[] args) {
@@ -52,3 +56,5 @@ public class Solution {
         return false;
     }
 }
+
+```
